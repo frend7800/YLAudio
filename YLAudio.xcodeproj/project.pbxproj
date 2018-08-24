@@ -15,6 +15,18 @@
 		A1F0BACB212FF5CE0021A5D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BACA212FF5CE0021A5D3 /* main.m */; };
 		A1F0BAD5212FF5CE0021A5D3 /* YLAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BAD4212FF5CE0021A5D3 /* YLAudioTests.m */; };
 		A1F0BAE0212FF5CE0021A5D3 /* YLAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BADF212FF5CE0021A5D3 /* YLAudioUITests.m */; };
+		A1F0BB0D212FF64B0021A5D3 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAF0212FF64B0021A5D3 /* libmp3lame.a */; };
+		A1F0BB0E212FF64B0021A5D3 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAF7212FF64B0021A5D3 /* libopencore-amrwb.a */; };
+		A1F0BB0F212FF64B0021A5D3 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAF8212FF64B0021A5D3 /* libopencore-amrnb.a */; };
+		A1F0BB10212FF64B0021A5D3 /* voiceAmrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BAFD212FF64B0021A5D3 /* voiceAmrFileCodec.mm */; };
+		A1F0BB11212FF64B0021A5D3 /* PFAudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BB00212FF64B0021A5D3 /* PFAudio.mm */; };
+		A1F0BB12212FF64B0021A5D3 /* YLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BB02212FF64B0021A5D3 /* YLAudioPlayer.m */; };
+		A1F0BB13212FF64B0021A5D3 /* YLVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BB03212FF64B0021A5D3 /* YLVoiceRecordView.m */; };
+		A1F0BB14212FF64B0021A5D3 /* YLAudioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0BB04212FF64B0021A5D3 /* YLAudioRecord.m */; };
+		A1F0BB15212FF64B0021A5D3 /* recordCancel_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F0BB06212FF64B0021A5D3 /* recordCancel_icon@2x.png */; };
+		A1F0BB16212FF64B0021A5D3 /* recordCancel_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F0BB07212FF64B0021A5D3 /* recordCancel_icon@3x.png */; };
+		A1F0BB17212FF64B0021A5D3 /* voiceRecord_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F0BB08212FF64B0021A5D3 /* voiceRecord_icon@3x.png */; };
+		A1F0BB18212FF64B0021A5D3 /* voiceRecord_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F0BB09212FF64B0021A5D3 /* voiceRecord_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,28 @@
 		A1F0BADB212FF5CE0021A5D3 /* YLAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F0BADF212FF5CE0021A5D3 /* YLAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAudioUITests.m; sourceTree = "<group>"; };
 		A1F0BAE1212FF5CE0021A5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F0BAF0212FF64B0021A5D3 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		A1F0BAF1212FF64B0021A5D3 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		A1F0BAF4212FF64B0021A5D3 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		A1F0BAF5212FF64B0021A5D3 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		A1F0BAF7212FF64B0021A5D3 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		A1F0BAF8212FF64B0021A5D3 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		A1F0BAFA212FF64B0021A5D3 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		A1F0BAFB212FF64B0021A5D3 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		A1F0BAFD212FF64B0021A5D3 /* voiceAmrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = voiceAmrFileCodec.mm; sourceTree = "<group>"; };
+		A1F0BAFE212FF64B0021A5D3 /* voiceAmrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voiceAmrFileCodec.h; sourceTree = "<group>"; };
+		A1F0BAFF212FF64B0021A5D3 /* PFAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAudio.h; sourceTree = "<group>"; };
+		A1F0BB00212FF64B0021A5D3 /* PFAudio.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PFAudio.mm; sourceTree = "<group>"; };
+		A1F0BB02212FF64B0021A5D3 /* YLAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAudioPlayer.m; sourceTree = "<group>"; };
+		A1F0BB03212FF64B0021A5D3 /* YLVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLVoiceRecordView.m; sourceTree = "<group>"; };
+		A1F0BB04212FF64B0021A5D3 /* YLAudioRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAudioRecord.m; sourceTree = "<group>"; };
+		A1F0BB06212FF64B0021A5D3 /* recordCancel_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordCancel_icon@2x.png"; sourceTree = "<group>"; };
+		A1F0BB07212FF64B0021A5D3 /* recordCancel_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordCancel_icon@3x.png"; sourceTree = "<group>"; };
+		A1F0BB08212FF64B0021A5D3 /* voiceRecord_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voiceRecord_icon@3x.png"; sourceTree = "<group>"; };
+		A1F0BB09212FF64B0021A5D3 /* voiceRecord_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voiceRecord_icon@2x.png"; sourceTree = "<group>"; };
+		A1F0BB0A212FF64B0021A5D3 /* YLVoiceRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLVoiceRecordView.h; sourceTree = "<group>"; };
+		A1F0BB0B212FF64B0021A5D3 /* YLAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioPlayer.h; sourceTree = "<group>"; };
+		A1F0BB0C212FF64B0021A5D3 /* YLAudioRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioRecord.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F0BB0E212FF64B0021A5D3 /* libopencore-amrwb.a in Frameworks */,
+				A1F0BB0F212FF64B0021A5D3 /* libopencore-amrnb.a in Frameworks */,
+				A1F0BB0D212FF64B0021A5D3 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +142,7 @@
 				A1F0BABC212FF5CC0021A5D3 /* AppDelegate.m */,
 				A1F0BABE212FF5CC0021A5D3 /* ViewController.h */,
 				A1F0BABF212FF5CC0021A5D3 /* ViewController.m */,
+				A1F0BAED212FF64B0021A5D3 /* Audio */,
 				A1F0BAC1212FF5CC0021A5D3 /* Main.storyboard */,
 				A1F0BAC4212FF5CE0021A5D3 /* Assets.xcassets */,
 				A1F0BAC6212FF5CE0021A5D3 /* LaunchScreen.storyboard */,
@@ -130,6 +168,107 @@
 				A1F0BAE1212FF5CE0021A5D3 /* Info.plist */,
 			);
 			path = YLAudioUITests;
+			sourceTree = "<group>";
+		};
+		A1F0BAED212FF64B0021A5D3 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAEE212FF64B0021A5D3 /* PFAudio */,
+				A1F0BB01212FF64B0021A5D3 /* YLAudio */,
+			);
+			path = Audio;
+			sourceTree = SOURCE_ROOT;
+		};
+		A1F0BAEE212FF64B0021A5D3 /* PFAudio */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAEF212FF64B0021A5D3 /* lame */,
+				A1F0BAF2212FF64B0021A5D3 /* VoiceConvert */,
+				A1F0BAFF212FF64B0021A5D3 /* PFAudio.h */,
+				A1F0BB00212FF64B0021A5D3 /* PFAudio.mm */,
+			);
+			path = PFAudio;
+			sourceTree = "<group>";
+		};
+		A1F0BAEF212FF64B0021A5D3 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAF0212FF64B0021A5D3 /* libmp3lame.a */,
+				A1F0BAF1212FF64B0021A5D3 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		A1F0BAF2212FF64B0021A5D3 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAF3212FF64B0021A5D3 /* opencore-amrwb */,
+				A1F0BAF6212FF64B0021A5D3 /* lib */,
+				A1F0BAF9212FF64B0021A5D3 /* opencore-amrnb */,
+				A1F0BAFC212FF64B0021A5D3 /* amrwapper */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		A1F0BAF3212FF64B0021A5D3 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAF4212FF64B0021A5D3 /* if_rom.h */,
+				A1F0BAF5212FF64B0021A5D3 /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		A1F0BAF6212FF64B0021A5D3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAF7212FF64B0021A5D3 /* libopencore-amrwb.a */,
+				A1F0BAF8212FF64B0021A5D3 /* libopencore-amrnb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A1F0BAF9212FF64B0021A5D3 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAFA212FF64B0021A5D3 /* interf_dec.h */,
+				A1F0BAFB212FF64B0021A5D3 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		A1F0BAFC212FF64B0021A5D3 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BAFD212FF64B0021A5D3 /* voiceAmrFileCodec.mm */,
+				A1F0BAFE212FF64B0021A5D3 /* voiceAmrFileCodec.h */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		A1F0BB01212FF64B0021A5D3 /* YLAudio */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BB05212FF64B0021A5D3 /* image */,
+				A1F0BB02212FF64B0021A5D3 /* YLAudioPlayer.m */,
+				A1F0BB03212FF64B0021A5D3 /* YLVoiceRecordView.m */,
+				A1F0BB04212FF64B0021A5D3 /* YLAudioRecord.m */,
+				A1F0BB0A212FF64B0021A5D3 /* YLVoiceRecordView.h */,
+				A1F0BB0B212FF64B0021A5D3 /* YLAudioPlayer.h */,
+				A1F0BB0C212FF64B0021A5D3 /* YLAudioRecord.h */,
+			);
+			path = YLAudio;
+			sourceTree = "<group>";
+		};
+		A1F0BB05212FF64B0021A5D3 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0BB06212FF64B0021A5D3 /* recordCancel_icon@2x.png */,
+				A1F0BB07212FF64B0021A5D3 /* recordCancel_icon@3x.png */,
+				A1F0BB08212FF64B0021A5D3 /* voiceRecord_icon@3x.png */,
+				A1F0BB09212FF64B0021A5D3 /* voiceRecord_icon@2x.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +376,10 @@
 			files = (
 				A1F0BAC8212FF5CE0021A5D3 /* LaunchScreen.storyboard in Resources */,
 				A1F0BAC5212FF5CE0021A5D3 /* Assets.xcassets in Resources */,
+				A1F0BB15212FF64B0021A5D3 /* recordCancel_icon@2x.png in Resources */,
+				A1F0BB16212FF64B0021A5D3 /* recordCancel_icon@3x.png in Resources */,
+				A1F0BB17212FF64B0021A5D3 /* voiceRecord_icon@3x.png in Resources */,
+				A1F0BB18212FF64B0021A5D3 /* voiceRecord_icon@2x.png in Resources */,
 				A1F0BAC3212FF5CC0021A5D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +405,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F0BB14212FF64B0021A5D3 /* YLAudioRecord.m in Sources */,
+				A1F0BB10212FF64B0021A5D3 /* voiceAmrFileCodec.mm in Sources */,
 				A1F0BAC0212FF5CC0021A5D3 /* ViewController.m in Sources */,
 				A1F0BACB212FF5CE0021A5D3 /* main.m in Sources */,
+				A1F0BB11212FF64B0021A5D3 /* PFAudio.mm in Sources */,
+				A1F0BB12212FF64B0021A5D3 /* YLAudioPlayer.m in Sources */,
+				A1F0BB13212FF64B0021A5D3 /* YLVoiceRecordView.m in Sources */,
 				A1F0BABD212FF5CC0021A5D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +588,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Audio/PFAudio/lame",
+					"$(PROJECT_DIR)/Audio/PFAudio/VoiceConvert/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fosun.com.YLAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +609,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Audio/PFAudio/lame",
+					"$(PROJECT_DIR)/Audio/PFAudio/VoiceConvert/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fosun.com.YLAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
