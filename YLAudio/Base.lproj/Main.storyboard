@@ -45,6 +45,15 @@
                                     <action selector="finishButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzK-Tc-ngO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UZ-4m-Bhl">
+                                <rect key="frame" x="44" y="573" width="285" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30536600409999998" green="1" blue="0.38415437270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="在线播放"/>
+                                <connections>
+                                    <action selector="clickToPlayAudioOnline:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFM-Fb-7jS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

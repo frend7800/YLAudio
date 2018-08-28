@@ -79,33 +79,56 @@
     
     NSURL * URL = nil;
     
+    //静音判断...
+    if ([self checkDeviceIsSilence]) {
+        
+        // return;
+    }
+    
     if ([url hasPrefix:@"http"]) {
         
         URL  = [NSURL URLWithString:url];
+        
+        dispatch_queue_t queue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+       
+        dispatch_async(queue, ^{
+            
+            NSData * data =  [NSData dataWithContentsOfURL:URL];
+            
+            self.audioPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];
+            
+            self.audioPlayer.delegate  = self;
+            
+            //设置声音的大小
+            self.audioPlayer.volume = 0.5;//范围为（0到1）；
+            
+            //准备播放
+            [self.audioPlayer prepareToPlay];
+            
+            [self.audioPlayer play];
+            
+        });
+        
+        
     }else{
         
         URL  = [NSURL fileURLWithPath:url];
+        
+        self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:URL error:nil];
+        
+        self.audioPlayer.delegate  = self;
+        
+        //设置声音的大小
+        self.audioPlayer.volume = 0.5;//范围为（0到1）；
+        
+        //准备播放
+        [self.audioPlayer prepareToPlay];
+        
+        [self.audioPlayer play];
     
     }
    
-   //静音判断...
-    if ([self checkDeviceIsSilence]) {
-
-       // return;
-    }
     NSLog(@"开始播放了---------%@",URL);
-    
-    self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:URL error:nil];
-    
-    self.audioPlayer.delegate  = self;
-    
-    //设置声音的大小
-    self.audioPlayer.volume = 0.5;//范围为（0到1）；
-    
-    //准备播放
-    [self.audioPlayer prepareToPlay];
-    
-    [self.audioPlayer play];
     
 }
 
@@ -123,30 +146,54 @@
     
     NSURL * URL = nil;
     
+    //静音判断...
+    if ([self checkDeviceIsSilence]) {
+        
+        // return;
+    }
+    
     if ([string hasPrefix:@"http"]) {
         
         URL  = [NSURL URLWithString:string];
+        
+        dispatch_queue_t queue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        
+        dispatch_async(queue, ^{
+            
+            NSData * data =  [NSData dataWithContentsOfURL:URL];
+            
+            self.audioPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];
+            
+            self.audioPlayer.delegate  = self;
+            
+            //设置声音的大小
+            self.audioPlayer.volume = 0.5;//范围为（0到1）；
+            
+            //准备播放
+            [self.audioPlayer prepareToPlay];
+            
+            [self.audioPlayer play];
+            
+        });
+        
+        
     }else{
         
         URL  = [NSURL fileURLWithPath:string];
+        
+        self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:URL error:nil];
+        
+        self.audioPlayer.delegate  = self;
+        
+        //设置声音的大小
+        self.audioPlayer.volume = 0.5;//范围为（0到1）；
+        
+        //准备播放
+        [self.audioPlayer prepareToPlay];
+        
+        [self.audioPlayer play];
+        
     }
-    
-    //静音判断...
-    if ([self checkDeviceIsSilence]) {
-
-
-       // return;
-    }
-    
-    self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:URL error:nil];
-    
-    //设置声音的大小
-    self.audioPlayer.volume = 0.5;//范围为（0到1）；
-    
-    //准备播放
-    [self.audioPlayer prepareToPlay];
-    
-    [self.audioPlayer play];
     
 }
 
@@ -176,15 +223,7 @@
             NSString  * string = self.audioArray[self.index];
             
             NSURL * URL = nil;
-            
-            if ([string hasPrefix:@"http"]) {
-                
-                URL  = [NSURL URLWithString:string];
-            }else{
-                
-                URL  = [NSURL fileURLWithPath:string];
-            }
-            
+        
             //设置播放模式
             [self setDeviceVoiceOutputType];
             
@@ -195,15 +234,48 @@
                 return;
             }
             
-            self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:URL error:nil];
-            
-            //设置声音的大小
-            self.audioPlayer.volume = 0.5;//范围为（0到1）；
-            
-            //准备播放
-            [self.audioPlayer prepareToPlay];
-            
-            [self.audioPlayer play];
+            if ([string hasPrefix:@"http"]) {
+                
+                URL  = [NSURL URLWithString:string];
+                
+                dispatch_queue_t queue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+                
+                dispatch_async(queue, ^{
+                    
+                    NSData * data =  [NSData dataWithContentsOfURL:URL];
+                    
+                    self.audioPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];
+                    
+                    self.audioPlayer.delegate  = self;
+                    
+                    //设置声音的大小
+                    self.audioPlayer.volume = 0.5;//范围为（0到1）；
+                    
+                    //准备播放
+                    [self.audioPlayer prepareToPlay];
+                    
+                    [self.audioPlayer play];
+                    
+                });
+                
+                
+            }else{
+                
+                URL  = [NSURL fileURLWithPath:string];
+                
+                self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:URL error:nil];
+                
+                self.audioPlayer.delegate  = self;
+                
+                //设置声音的大小
+                self.audioPlayer.volume = 0.5;//范围为（0到1）；
+                
+                //准备播放
+                [self.audioPlayer prepareToPlay];
+                
+                [self.audioPlayer play];
+                
+            }
             
         }
     

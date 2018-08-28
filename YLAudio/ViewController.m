@@ -63,6 +63,14 @@
     
 }
 
+- (IBAction)clickToPlayAudioOnline:(id)sender {
+    
+    
+    NSString  * string  =  @"http://hq-jkdj.oss-cn-shanghai-fosun1-d01-a.cloud.fosun.com/ia/f84ecfc2-aa9a-11e8-b711-0242c99e8850.mp3";
+    
+    [self.player playAudioWithContentUrl:string];
+    
+}
 
 
 - (void)audioRecordPowerProgress:(CGFloat)progress recordTime:(CGFloat)recordTime{
